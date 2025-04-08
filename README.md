@@ -12,9 +12,7 @@ Welcome to my **developer portfolio** – a modern, fast, and responsive persona
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **UI Library**: [React](https://reactjs.org/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) (optional)
-- **Deployment**: [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
 ---
 
