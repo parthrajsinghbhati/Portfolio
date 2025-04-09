@@ -49,9 +49,9 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
             </button>
 
-            <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>LinkedIn 
+            <a href="https://www.linkedin.com/in/parthraj-singh-bhati-6a5128309/" className='hidden lg:flex items-center gap-3 px-8 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>LinkedIn 
             <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="" className='w-3'/></a>
-            <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>Github 
+            <a href="https://github.com/parthrajsinghbhati" className='hidden lg:flex items-center gap-3 px-8 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>Github 
             <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="" className='w-3'/></a>
 
             <button className='block md:hidden ml-3' onClick={openMenu}>
@@ -72,8 +72,8 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a className='font-Ovo' onClick={closeMenu} href="#services">Services</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#work">My Work</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
-            <li><a className='font-Ovo' onClick={closeMenu} href="#work">LinkedIn</a></li>
-            <li><a className='font-Ovo' onClick={closeMenu} href="#contact">Github</a></li>
+            <li><a className='font-Ovo' onClick={closeMenu} href="https://www.linkedin.com/in/parthraj-singh-bhati-6a5128309/">LinkedIn</a></li>
+            <li><a className='font-Ovo' onClick={closeMenu} href="https://github.com/parthrajsinghbhati">Github</a></li>
         </ul>
 
 

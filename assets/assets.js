@@ -78,24 +78,22 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'GreenCart site',
+        description: 'Grocery Delivery site',
         bgImage: '/work-1.png',
+        link: 'https://green-cart-woad.vercel.app/'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Cryptoplace',
+        description: 'Crypto Details site',
         bgImage: '/work-2.png',
+        link: ''
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Snake Game',
+        description: 'Game site',
         bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        link: 'https://snakesfoodgame.netlify.app/'
     },
 ]
 

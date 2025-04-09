@@ -39,6 +39,7 @@ const Work = ({isDarkMode}) => {
     className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
         {workData.map((project, index)=>(
             <motion.div
+            onClick={()=> window.open(project.link, '_blank')}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
