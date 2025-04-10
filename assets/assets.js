@@ -87,7 +87,7 @@ export const workData = [
         title: 'Cryptoplace',
         description: 'Crypto Details site',
         bgImage: '/work-2.png',
-        link: ''
+        link: 'https://cryptoplace-taupe.vercel.app/'
     },
     {
         title: 'Snake Game',
@@ -98,13 +98,13 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'Data Structures & Algorithms', description: 'DSA builds a strong foundation in problem-solving and optimises code efficiency...', link: '' },
+    { icon: assets.web_icon, title: 'Web development', description: 'Web development is the process of building, programming...', link: 'https://en.wikipedia.org/wiki/Web_development' },
+    { icon: assets.mobile_icon, title: 'Open source contribution', description: 'Open source contribution means collaborating on public code to improve software and learn by doing...', link: 'https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/#:~:text=In%20simple%20words%2C%20we%20can,of%20small%20things%20brought%20together.' },
+    { icon: assets.ui_icon, title: 'Data Structures & Algorithms', description: 'DSA builds a strong foundation in problem-solving and optimises code efficiency...', link: 'https://www.w3schools.com/dsa/' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, Tailwind CSS, Python, SQL' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, Tailwind CSS, Python' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science & AI' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built many projects' }
 ];

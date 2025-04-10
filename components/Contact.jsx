@@ -12,8 +12,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    // Enter your web3 froms access key below
-    formData.append("access_key", "------Enter Access Key Here-------");
+    formData.append("access_key", "731cac38-09ad-45c3-9600-f9107d7dee11");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -30,6 +29,7 @@ const Contact = () => {
       setResult(data.message);
     }
   };
+
 
 
   return (
@@ -49,35 +49,35 @@ const Contact = () => {
       <motion.h2
       initial={{ y: -20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
+      transition={{ delay: 0.4, duration: 0.5 }}
       className='text-center text-5xl font-Ovo'>
       Get in touch</motion.h2>
 
       <motion.p
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.7, duration: 0.5 }}
+      transition={{ delay: 0.5, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
       I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
 
       <motion.form
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.9, duration: 0.5 }}
+      transition={{ delay: 0.7, duration: 0.5 }}
       onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
 
             <motion.input
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
             type="text" placeholder='Enter your name' required
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90' name='name'/>
 
             <motion.input
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
             type="email" placeholder='Enter your email' required
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90' name='email'/>
 
@@ -85,7 +85,7 @@ const Contact = () => {
         <motion.textarea 
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1.3, duration: 0.6 }}
+        transition={{ delay: 1, duration: 0.6 }}
         rows='6' placeholder='Enter your message' required
         className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90' name='message'></motion.textarea>
 
