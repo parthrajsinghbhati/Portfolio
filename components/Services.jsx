@@ -1,4 +1,4 @@
-import { assets, serviceData } from '@/assets/assets'
+import { serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
@@ -30,7 +30,7 @@ const Services = () => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I am a frontend developer with hands-on experience in open-source, web development, and multiple personal projects.</motion.p>
+        I am a full-stack developer with hands-on experience in web development, competitive programming and multiple personal projects.</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}
@@ -47,9 +47,6 @@ const Services = () => {
                     <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                         {description}
                     </p>
-                    <a href={link} target='_blank' className='flex items-center gap-2 text-sm mt-5'>
-                        Read more <Image alt='' src={assets.right_arrow} className='w-4'/>
-                    </a>
                 </motion.div>
             ))}
         </motion.div>
