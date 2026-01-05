@@ -78,6 +78,12 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'QuickDB',
+        description: 'Database for frontend developers',
+        bgImage: '/work-3.png',
+        link: 'https://quick-db.vercel.app/'
+    },
+    {
         title: 'GreenCart site',
         description: 'Grocery Delivery site',
         bgImage: '/work-1.png',
@@ -88,12 +94,6 @@ export const workData = [
         description: 'Crypto Details site',
         bgImage: '/work-2.png',
         link: 'https://cryptoplace-taupe.vercel.app/'
-    },
-    {
-        title: 'Snake Game',
-        description: 'Game site',
-        bgImage: '/work-3.png',
-        link: 'https://snakesfoodgame.netlify.app/'
     },
 ]
 
