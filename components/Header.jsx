@@ -24,7 +24,7 @@ const Header = () => {
     whileInView={{y: 0, opacity: 1}}
     transition={{duration: 0.8, delay: 0.5}}
     className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        full-stack web developer based in Delhi NCR.</motion.h1>
+        AI & Full-stack Developer based in Delhi NCR.</motion.h1>
 
         <motion.p
         initial={{opacity: 0}}
@@ -47,7 +47,9 @@ const Header = () => {
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 1.2}}
-            href="/Resume-Parthraj Singh Bhati.pdf" download 
+            href="https://drive.google.com/drive/folders/1w6Qoj47vTR8N7i6X83yOD5nX7EO6FCbe?usp=sharing" 
+            target="_blank"
+            rel="noopener noreferrer"
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
                 my resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
         </div>

@@ -35,6 +35,10 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import fullstack_icon from './fullstack-icon.png';
+import ai_ml_icon from './ai-ml-icon.png';
+import dva_icon from './dva-icon.png';
+import postman from './postman.png';
 
 export const assets = {
     user_image,
@@ -73,15 +77,37 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    fullstack_icon,
+    ai_ml_icon,
+    dva_icon,
+    postman
 };
 
 export const workData = [
+    {
+        title: 'Job Pilot',
+        description: 'AI job application automation suite with resume scoring',
+        bgImage: '/job-pilot.png',
+        link: 'https://job-pilot-six.vercel.app/'
+    },
+    {
+        title: 'NextFlow',
+        description: 'Visually assemble AI pipelines on an interactive canvas',
+        bgImage: '/nextflow.png',
+        link: 'https://next-flow-three-lovat.vercel.app/'
+    },
     {
         title: 'QuickDB',
         description: 'Database for frontend developers',
         bgImage: '/work-3.png',
         link: 'https://quick-db.vercel.app/'
+    },
+    {
+        title: 'HR Analytics Dashboard',
+        description: 'Tableau visual analytics monitoring employee attrition and retention',
+        bgImage: '/hr-analytics.png',
+        link: 'https://public.tableau.com/views/HRanalyticsdashboard_17774056880270/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
     },
     {
         title: 'GreenCart site',
@@ -98,17 +124,17 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web development', description: 'Crafting modern, responsive, and visually appealing web interfaces that provide seamless user experiences across devices.' },
-    { icon: assets.mobile_icon, title: 'Competitive Programming', description: 'Active competitive programmer with CodeForces 1246 (Pupil), LeetCode 200+ problems solved, and CodeChef 3★ (1665 rating).' },
-    { icon: assets.ui_icon, title: 'Problem Solving', description: 'Strong foundation in Data Structures and Algorithms to create efficient and optimised solutions.' },
+    { icon: assets.fullstack_icon, title: 'Full Stack Development', description: 'Crafting modern, responsive, and robust full stack web applications with seamless frontend UX and efficient backend databases.' },
+    { icon: assets.ai_ml_icon, title: 'AI & ML', description: 'Developing intelligent solutions, predictive machine learning models, neural networks, and integrating cognitive AI features.' },
+    { icon: assets.dva_icon, title: 'DVA', description: 'Designing interactive visual analytics, standardizing metrics, and building comprehensive dashboards for data-driven decisions.' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C++, Python, JavaScript, CSS, HTML' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Software Packages', description: 'MySQL, Express JS, Prisma ORM, Tailwind, Next JS, Node.js, React' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C++, Python, TypeScript, JavaScript, CSS, HTML' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Software Packages', description: 'MongoDB, MySQL, Express JS, Prisma ORM, Tailwind, Next JS, Node.js, React' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science & AI' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.postman, assets.git
 ];
