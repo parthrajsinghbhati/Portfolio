@@ -14,14 +14,14 @@ const About = ({isDarkMode}) => {
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5, delay: 0.3}}
-      className='text-center mb-2 text-lg font-Ovo'>
+      className='text-center mb-2 text-lg font-Ovo dark:text-primary'>
         Introduction</motion.h4>
 
       <motion.h2 
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5, delay: 0.5}}
-      className='text-center text-5xl font-Ovo'>
+      className='text-center text-5xl font-Ovo dark:text-primary'>
         About me</motion.h2>
 
         <motion.div 
@@ -41,7 +41,7 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'
+                <p className='mb-10 max-w-2xl font-Ovo dark:text-secondary/80'
                 >I am an experienced Full-Stack Developer with a background in Competitive Programming, Website Development, and multiple personal projects. I specialise in building responsive web interfaces. Strong foundation in Data Structures and Algorithms, with a CodeForces rating of 1246 (Pupil), 200+ problems solved on LeetCode, and a 3★ CodeChef rating of 1665.</p>
 
                 <motion.ul
@@ -55,8 +55,8 @@ const About = ({isDarkMode}) => {
                         className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
                          key={index}>
                             <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3'/>
-                            <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                            <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                            <h3 className='my-4 font-semibold text-gray-700 dark:text-primary'>{title}</h3>
+                            <p className='text-gray-600 text-sm dark:text-secondary/80'>{description}</p>
                         </motion.li>
                     ))}
                 </motion.ul>
@@ -65,7 +65,7 @@ const About = ({isDarkMode}) => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
-                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</motion.h4>
+                className='my-6 text-gray-700 font-Ovo dark:text-primary'>Tools I use</motion.h4>
 
                 <motion.ul
                 initial={{ opacity: 0 }}

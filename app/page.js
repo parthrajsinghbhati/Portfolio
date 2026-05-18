@@ -43,15 +43,18 @@ export default function Home() {
       SPLAT_RADIUS={0.2}
       SPLAT_FORCE={6000}
       COLOR_UPDATE_SPEED={10}
-      zIndex={50}
+      zIndex={0}
+      isDarkMode={isDarkMode}
     />
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-    <Header isDarkMode={isDarkMode} />
-    <About isDarkMode={isDarkMode} />
-    <Services isDarkMode={isDarkMode} />
-    <Work isDarkMode={isDarkMode} />
-    <Contact isDarkMode={isDarkMode} />
-    <Footer isDarkMode={isDarkMode} />
+    <div className="relative z-10">
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Header isDarkMode={isDarkMode} />
+      <About isDarkMode={isDarkMode} />
+      <Services isDarkMode={isDarkMode} />
+      <Work isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
+    </div>
     </>
   );
 }

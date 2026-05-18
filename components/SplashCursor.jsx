@@ -18,10 +18,16 @@ function SplashCursor({
   TRANSPARENT = true,
   RAINBOW_MODE = true,
   COLOR = '#ff0000',
-  zIndex = 50
+  zIndex = 50,
+  isDarkMode = false
 }) {
   const canvasRef = useRef(null);
   const animationFrameId = useRef(null);
+  const isDarkModeRef = useRef(isDarkMode);
+
+  useEffect(() => {
+    isDarkModeRef.current = isDarkMode;
+  }, [isDarkMode]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -897,6 +903,18 @@ function SplashCursor({
     }
 
     function generateColor() {
+      if (isDarkModeRef.current) {
+        // Generate beautiful gold, amber, and warm light golden cream colors to match palette
+        // Gold: Hue around 0.08 to 0.15 in HSV (28° to 54°)
+        const h = 0.08 + Math.random() * 0.07;
+        const s = 0.6 + Math.random() * 0.4;
+        const v = 0.8 + Math.random() * 0.2;
+        let c = HSVtoRGB(h, s, v);
+        c.r *= 0.15;
+        c.g *= 0.15;
+        c.b *= 0.15;
+        return c;
+      }
       if (!config.RAINBOW_MODE) {
         return hexToRGB(config.COLOR);
       }

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { motion } from "motion/react"
 
-const Contact = () => {
+const Contact = ({ isDarkMode }) => {
 
   const [result, setResult] = useState("");
 
@@ -43,21 +43,21 @@ const Contact = () => {
       initial={{ y: -20, opacity: 0 }} 
       whileInView={{ y: 0, opacity: 1 }} 
       transition={{ delay: 0.3, duration: 0.5 }}
-      className='text-center mb-2 text-lg font-Ovo'>
+      className='text-center mb-2 text-lg font-Ovo dark:text-primary'>
       Connect with me</motion.h4>
 
       <motion.h2
       initial={{ y: -20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.4, duration: 0.5 }}
-      className='text-center text-5xl font-Ovo'>
+      className='text-center text-5xl font-Ovo dark:text-primary'>
       Get in touch</motion.h2>
 
       <motion.p
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}
-      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo dark:text-secondary'>
       I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
 
       <motion.form
@@ -93,8 +93,8 @@ const Contact = () => {
         whileHover={{ scale: 1.05 }} 
         transition={{ duration: 0.3 }}
         type='submit'
-        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
-        >Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.button>
+        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-primary dark:text-black dark:border-primary font-medium'
+        >Submit now <Image src={isDarkMode ? assets.right_arrow : assets.right_arrow_white} alt='' className='w-4'/></motion.button>
 
         <p className='mt-4'>{result}</p>
       </motion.form>

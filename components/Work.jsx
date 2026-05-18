@@ -16,7 +16,7 @@ const Work = ({ isDarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className="text-center mb-2 text-lg font-Ovo dark:text-primary"
       >
         My portfolio
       </motion.h4>
@@ -25,7 +25,7 @@ const Work = ({ isDarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+        className="text-center text-5xl font-Ovo dark:text-primary"
       >
         My latest work
       </motion.h2>
@@ -34,7 +34,7 @@ const Work = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo dark:text-secondary"
       >
         Welcome to my AI & Full-stack development portfolio! Explore a collection of projects showcasing my expertise in AI & Full-stack development.
       </motion.p>
@@ -59,7 +59,7 @@ const Work = ({ isDarkMode }) => {
                 <h2 className="font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-secondary transition">
                 <Image src={assets.send_icon} alt="send icon" className="w-5" />
               </div>
             </div>
